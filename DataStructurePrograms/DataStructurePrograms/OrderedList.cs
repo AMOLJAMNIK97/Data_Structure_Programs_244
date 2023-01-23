@@ -11,9 +11,9 @@ namespace DataStructurePrograms
         public Node Head;
         public void Ordered(string str)
         {
-            string text = File.ReadAllText(@"C:\AMD\RFP244\Data_Structure_Programs_244\DataStructurePrograms\DataStructurePrograms\order.txt");
+            string text = File.ReadAllText(@"C:\AMD\RFP244\Data_Structure_Programs_244\DataStructurePrograms\DataStructurePrograms\UnOrdered.txt");
             string[] words = text.Split(' ');
-            Array.Sort(words);
+            //Array.Sort(words);
             for(int i = 0; i < words.Length; i++)
             {
                 Node node = new Node(words[i]);
@@ -58,7 +58,7 @@ namespace DataStructurePrograms
             }
             string contact = string.Concat(array);
             Console.WriteLine(contact);
-            File.WriteAllText(@"C:\AMD\RFP244\Data_Structure_Programs_244\DataStructurePrograms\DataStructurePrograms\order.txt", contact);
+            File.WriteAllText(@"C:\AMD\RFP244\Data_Structure_Programs_244\DataStructurePrograms\DataStructurePrograms\UnOrdered.txt", contact);
         }
     }
 }
